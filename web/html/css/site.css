@@ -5,6 +5,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;500&family=Kodchasan&family=Share+Tech+Mono&display=swap');
 
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+  border: 0;
+  height: 2px;
+  margin:18px 0;
+  position:relative;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 10%, rgba(255,255,255,0.3) 20%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0.3) 80%, rgba(255,255,255,0) 90%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%,rgba(255,255,255,0)), color-stop(20%,rgba(255,255,255,0.3)), color-stop(50%,rgba(255,255,255,0.65)), color-stop(80%,rgba(255,255,255,0.3)), color-stop(90%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 10%,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0.3) 80%,rgba(255,255,255,0) 90%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255,255,255,0) 10%,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0.3) 80%,rgba(255,255,255,0) 90%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 10%,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0.3) 80%,rgba(255,255,255,0) 90%); /* IE10+ */
+  background: linear-gradient(left, rgba(255,255,255,0) 10%,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0.3) 80%,rgba(255,255,255,0) 90%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+
+hr:before {
+  display: block;
+  border-top: solid 1px #f9f9f9;
+  width: 90%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+/* These are used for persona login buttons */
 .grid-items {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
@@ -32,16 +62,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Kodchasan', sans-serif;
 }
 
+h6 {
+  /* intentional to match th, td */
+  padding-left: 16px;
+  margin-top: 6px;
+}
+
 a {
-  color: #5060b0;
+  color: #7070b0;
 }
 
 a:active {
-  color: #7090f0;
+  color: #9090f0;
 }
 
 a:visited {
-  color: #4040a0;
+  color: #6060a0;
+}
+
+th, td {
+  padding:12px;
 }
 
 .titlebar {
@@ -57,6 +97,7 @@ a:visited {
   float: left;
   min-width: 200px;
   max-width: 23%;
+  margin-top: 36px;
   padding-right: 0.5%;
   padding-left: 32px;
   text-align: left;
@@ -83,6 +124,8 @@ a:visited {
   height:  100%;
   mix-blend-mode: difference;
   background-image: url('../img/grey.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   filter: invert(100%);
 }
 
@@ -171,3 +214,37 @@ a:visited {
   font-weight: bolder;
 }
 
+.footer {
+  margin:20px;
+}
+
+.license {
+  width: 20%;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.author-stats {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.author-line {
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+
+.page-stats {
+  margin-top: 36px;
+}
+
+.page-stat-line {
+  text-align:  right;
+  margin-top: 4px;
+  margin-bottom: 7px;
+  font-size: .7rem;
+}
+
+.stat-offset {
+  padding-right: 6px;
+}

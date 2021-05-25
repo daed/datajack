@@ -13,7 +13,16 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nisl ex. Maecenas turpis leo, facilisis sed enim vel, mollis ultrices nulla. Nullam accumsan arcu ac est egestas, a ullamcorper leo eleifend. Vivamus rhoncus bibendum malesuada. Nunc nunc risus, rutrum ac viverra ut, viverra nec est. Morbi non neque eget tortor rutrum cursus ac at est. Sed ac dapibus eros. Maecenas accumsan vitae sem non venenatis. Etiam accumsan, diam ut euismod dapibus, risus urna blandit leo, quis luctus erat velit ac dui. Vivamus egestas imperdiet aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In at pellentesque nulla. Vivamus a leo gravida, viverra nisi maximus, mollis mauris. Nunc aliquam augue enim, eu maximus eros varius vel. Vestibulum laoreet convallis pellentesque.
 
 Proin rutrum efficitur dolor, non efficitur metus gravida sit amet. Vivamus leo quam, mollis vitae tristique sed, porta id est. Maecenas elit dolor, auctor in volutpat in, mollis sed ipsum. Duis sit amet nunc at nulla interdum porta vel in turpis. Ut interdum sem vitae congue aliquet. Morbi finibus lectus at nisi dictum vulputate. Etiam at libero est. Vestibulum at neque justo. 
-<div style="border: 1px solid grey; float: right;"> A sidebar is here!</div><div class="clearfix"></div>
+<div style="border: 1px solid grey; float: right; padding:10px; margin:16px">
+This is a sidebar containing a table!
+
+|Left column |  A number value |
+|------------|-----------------|
+|Line 1      | 1               |
+|Line 2      | 2               |
+|Line 3      | 3               |
+###### Fig 2. A table made in markdown
+</div><div class="clearfix"></div>
 
 Praesent ac pretium turpis. Nulla ullamcorper turpis lacinia turpis placerat, quis volutpat massa maximus. Vestibulum eu mollis quam, ut imperdiet augue. Vivamus ac orci tincidunt, porta ante id, placerat lectus. Aliquam erat volutpat. Vestibulum non ullamcorper nibh. Vivamus lacinia maximus orci, ac luctus est tempus vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum laoreet arcu ac diam rutrum, sed fringilla metus eleifend. Donec pharetra, elit ac ornare viverra, purus nisi ullamcorper eros, id maximus leo nisl in mi. Proin pulvinar, lectus non vulputate varius, ante purus imperdiet augue, ut vestibulum metus odio nec sem. Nunc vitae rhoncus nibh. Praesent vitae nibh sit amet ligula bibendum fringilla. Maecenas finibus a nisi quis placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec fermentum erat.
 

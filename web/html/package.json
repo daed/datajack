@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "keywords": "",
-  "license": "",
+  "license": "cc-by-nc-sa-4.0",
   "author": "",
   "scripts": {
     "build": "parcel build index.html",
