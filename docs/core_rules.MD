@@ -97,15 +97,15 @@ This means that the Pilot skill (which is Dexterity based) should be used, and t
 
 A hitbox is a specific location on a character that can take damage.  Each hitbox has two hitpoints by default.  This may be modified by traits, cybernetics, body armor or other characteristics.  The hitboxes present on a normal unmodified human are as below.  The overwhelming majority of all characters will have these, but cybernetics, injuries, or other events may add or remove hitboxes as well to a character's list.
 
-|Hitboxes
-|-------
-|Head
-|Right arm
-|Left arm
-|Torso
-|Groin
-|Right leg
-|Left leg
+|Hitboxes|
+|------- |
+|Head    |
+|Right arm|
+|Left arm |
+|Torso    |
+|Groin    |
+|Right leg|
+|Left leg |
 
 
 At one hitpoint remaining, a hitbox is considered injured.  It may continue to be used, but any test depending on it (GM discretion) only receives half of the modifier from skills or traits, rounded down (unless otherwise specified).  A resist pain test may be attempted before a skill test (at the same difficulty) in order to receive the full bonus.
