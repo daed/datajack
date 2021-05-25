@@ -1,3 +1,9 @@
+---
+Author: Cornelius Ratfink
+Note: Gimmie yer money!
+---
+
+
 # Core Rules
 ## Player Characters
 ### Tabula Rasa:  Become A New You, Today!
@@ -88,7 +94,7 @@ This means that the Pilot skill (which is Dexterity based) should be used, and t
 - Economics
 - Engineering
 - Business
-- \<specific interest\> (examples: Music, Sports, Fashion, Videos)
+- \<specific interest> (examples: Music, Sports, Fashion, Videos)
 - Language (specific)
 
 ### Health
@@ -120,7 +126,7 @@ At zero hit points remaining, a hitbox is too hurt to use properly.  All skill t
 
 At -1 hit points remaining, a hitbox is destroyed or mangled beyond triage.  This injury cannot be treated outside of a medical center or other comparable facility staffed by competent personnel.  All skill tests requiring the use of this hitbox fail.  Due to extreme pain, ANY test performed by the character only receives half of the modifier from skills or traits, rounded down (unless otherwise specified).  No resist pain test may be attempted to mitigate this penalty.
 
-In addition, the character is at risk of bleeding out and must also pass a Blackout (Fortitude) test (difficulty = 10 + total missing hitpoints) every minute to stay conscious.  Only one such test must be performed each minute.
+In addition, the character is at risk of bleeding out and must also pass a ```Blackout (Fortitude)``` test (difficulty = 10 + total missing hitpoints) every minute to stay conscious.  Only one such test must be performed each minute.
 
 **SPECIAL:** A torso or head at negative hit points results in death of that character.
 
