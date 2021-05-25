@@ -146,11 +146,25 @@
     .then(res => {
       return res.text();
     })
-    .then(json => {
+    .then(text => {
+      var lines = text.split(/\r?\n/);
+      var meta = [];
+
+      for (let i=0; i<lines.length;i++) {
+        console.log(`Parsing: ${lines[i]}`);
+        if (lines[i].startsWith("@")) {
+          meta.push(lines[i]);
+          console.log(`Found metadata: ${lines[i]}`);
+          lines[i] = "";
+        }
+        else {
+          break;
+        }
+      }
+      text = lines.join('\n');
       var sd = document.getElementById("content");
       var converter   = new showdown.Converter();
       converter.setFlavor('github');
-      var text        = json;
       var html        = converter.makeHtml(text);
       sd.innerHTML = html;
     });

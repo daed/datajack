@@ -1,7 +1,5 @@
----
-Author: Cornelius Ratfink
-Note: Gimmie yer money!
----
+@Author: Cornelius Ratfink
+@Note: Gimme yer money!
 
 
 # Core Rules
