@@ -50,11 +50,12 @@ Higher values go first during combat
 
 The number of rounds an action takes to complete is determined by the test difficulty divided by the cyberdeck stat rounded down.
 
-|Stats
-|-----
-|Throughput (Wreck / Crack)
-|Firewall (Defy / Lurk)
-|Processor (Sift / Operate)
+|Stats| Associated Skills|
+|-----|------------------|
+|Throughput | Wreck, Crack|
+|Firewall   | Defy, Lurk|
+|Processor  | Sift, Operate|
+
 
 ### Traits
 

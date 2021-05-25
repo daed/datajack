@@ -4,8 +4,6 @@
 <head>
   <script type="text/javascript">
     var timerStart = Date.now();
-    // if javascript is supported, let's not show the javascript not supported message
-    document.getElementById('content').innerText = "";
   </script>
   <meta charset="utf-8">
   <title></title>
@@ -57,7 +55,7 @@
     <div class="titlebar">
         <p id="title" class="title-text">Datajack!</p>
     </div>
-    <div class='sidebar'>
+    <div id="sidebar" class='sidebar'>
       You shouldn't be reading this.
     </div>
     <div class='main'>
