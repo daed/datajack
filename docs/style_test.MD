@@ -21,6 +21,7 @@ This is a sidebar containing a table!
 |Line 1      | 1               |
 |Line 2      | 2               |
 |Line 3      | 3               |
+
 ###### Fig 2. A table made in markdown
 </div><div class="clearfix"></div>
 
