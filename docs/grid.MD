@@ -1,3 +1,6 @@
+@Author: Cornelius Ratfink
+@Note: Gimme yer money!
+
 # The Grid
 
 ## Turn on, Jack in, Drop out

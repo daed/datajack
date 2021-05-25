@@ -1,3 +1,6 @@
+@Author: Cornelius Ratfink
+@Note: Gimme yer money!
+
 # Welcome to ${systemName}
 
 ${systemName} is a free cyberpunk role-playing system born out of a need for a system that's modern, accessible, and streamlined.

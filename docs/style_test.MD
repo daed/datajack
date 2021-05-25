@@ -1,3 +1,6 @@
+@Author: Cornelius Ratfink
+@Note: Gimme yer money!
+
 # This text is titacular.
 
 ## This is big attention grabbing text.

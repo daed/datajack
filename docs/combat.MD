@@ -1,3 +1,6 @@
+@Author: Cornelius Ratfink
+@Note: Gimme yer money!
+
 # Combat
 
 ## Determining if you hit

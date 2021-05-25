@@ -1,3 +1,6 @@
+@Author: Cornelius Ratfink
+@Note: Gimme yer money!
+
 # A Brief History Brief
 ## Timeline of the Perpetual Age
 
