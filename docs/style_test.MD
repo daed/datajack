@@ -26,7 +26,7 @@ This is a sidebar containing a table!
 |Line 3      | 3               |
 
 ###### Fig 2. A table made in markdown
-</div><div class="clearfix"></div>
+</div>
 
 Praesent ac pretium turpis. Nulla ullamcorper turpis lacinia turpis placerat, quis volutpat massa maximus. Vestibulum eu mollis quam, ut imperdiet augue. Vivamus ac orci tincidunt, porta ante id, placerat lectus. Aliquam erat volutpat. Vestibulum non ullamcorper nibh. Vivamus lacinia maximus orci, ac luctus est tempus vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum laoreet arcu ac diam rutrum, sed fringilla metus eleifend. Donec pharetra, elit ac ornare viverra, purus nisi ullamcorper eros, id maximus leo nisl in mi. Proin pulvinar, lectus non vulputate varius, ante purus imperdiet augue, ut vestibulum metus odio nec sem. Nunc vitae rhoncus nibh. Praesent vitae nibh sit amet ligula bibendum fringilla. Maecenas finibus a nisi quis placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec fermentum erat.
 
