@@ -1,5 +1,5 @@
-@Author: Cornelius Ratfink
-@Note: Gimme yer money!
+@Author: Brad Arnett
+@Note: Donate if you like this project:
 
 # Combat
 
@@ -18,7 +18,7 @@ The targeted character can actively attempt to avoid getting hit.  They can do t
 |At least 50% of the target is not visible|-1
 |Target is in darkness or dim light|-1
 |Target is lying prone|-1
-|Firing a called shot|-1
+|Firing a called shot|-2
 
 
 ## Determining where you hit

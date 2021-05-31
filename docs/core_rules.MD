@@ -1,5 +1,5 @@
-@Author: Cornelius Ratfink
-@Note: Gimme yer money!
+@Author: Brad Arnett
+@Note: Donate if you like this project:
 
 
 # Core Rules
@@ -57,19 +57,21 @@ This means that the Pilot skill (which is Dexterity based) should be used, and t
 - Blackout (resist passing out)
 - Pain
 - Poison
-- Endurance (take less damage from bleedout)
+- Endurance (take less damage from bleedout, radiation)
 - Disengage (perform a real-world action while connected)
 
 **Will**
+- Recall (general memory skill)
+- resist fear
 - Survival (foraging / improvising shelter) 
 - Discern subterfuge
-  - Cyberskills
-    - Wreck (attack an entity)
-    - Sift (perception skill)
-    - Defy (resist attack)
-    - Crack (cyber-lockpicking)
-    - Lurk (cyber-stealth)
-    - Operate (manipulate complex program)
+- Cyberskills
+  - Wreck (attack an entity)
+  - Sift (perception skill)
+  - Defy (resist attack)
+  - Crack (cyber-lockpicking)
+  - Lurk (cyber-stealth)
+  - Operate (manipulate complex program)
 
 **Charm**
 - Fast talk (bluff)
@@ -78,7 +80,7 @@ This means that the Pilot skill (which is Dexterity based) should be used, and t
 - Perform (acting / singing / playing an instrument)
 - Haggle (try to affect prices or get a better deal)
 - Impersonate (behave in a fake manner believably)
-
+- Threaten
 
 **Knowledge Skills**
 - Gangs
@@ -99,7 +101,9 @@ This means that the Pilot skill (which is Dexterity based) should be used, and t
 
 #### Hitpoints and Hitboxes
 
-A hitbox is a specific location on a character that can take damage.  Each hitbox has two hitpoints by default.  This may be modified by traits, cybernetics, body armor or other characteristics.  The hitboxes present on a normal unmodified human are as below.  The overwhelming majority of all characters will have these, but cybernetics, injuries, or other events may add or remove hitboxes as well to a character's list.
+A hitbox is a specific location on a character that can take damage.  Each hitbox has two hitpoints by default.  This may be modified by traits, cybernetics, body armor or other characteristics.  The hitboxes present on a normal unmodified human are listed in the sidebar.  The overwhelming majority of all characters will have these, but cybernetics, injuries, or other events may add or remove hitboxes as well to a character's list.
+
+<div style="border: 1px solid grey; float: right; padding:10px; margin:16px" markdown="1">
 
 |Hitboxes|
 |------- |
@@ -111,6 +115,9 @@ A hitbox is a specific location on a character that can take damage.  Each hitbo
 |Right leg|
 |Left leg |
 
+###### Fig 1. Basic Human Hitboxes
+
+</div>
 
 At one hitpoint remaining, a hitbox is considered injured.  It may continue to be used, but any test depending on it (GM discretion) only receives half of the modifier from skills or traits, rounded down (unless otherwise specified).  A resist pain test may be attempted before a skill test (at the same difficulty) in order to receive the full bonus.
 
@@ -122,9 +129,7 @@ At zero hit points remaining, a hitbox is too hurt to use properly.  All skill t
 
 **SPECIAL:** groin at zero hit points increases the difficulty of the Blackout test by 1.  This permanent injury may also inflict severe trauma not reflected here.
 
-At -1 hit points remaining, a hitbox is destroyed or mangled beyond triage.  This injury cannot be treated outside of a medical center or other comparable facility staffed by competent personnel.  All skill tests requiring the use of this hitbox fail.  Due to extreme pain, ANY test performed by the character only receives half of the modifier from skills or traits, rounded down (unless otherwise specified).  No resist pain test may be attempted to mitigate this penalty.
-
-In addition, the character is at risk of bleeding out and must also pass a ```Blackout (Fortitude)``` test (difficulty = 10 + total missing hitpoints) every minute to stay conscious.  Only one such test must be performed each minute.
+At -1 hit points remaining, a hitbox is destroyed or mangled beyond triage.  This injury cannot be treated outside of a medical center or other comparable facility staffed by competent personnel.  All skill tests requiring the use of this hitbox fail.  Due to extreme pain, ANY test performed by the character only receives half of the modifier from skills.  This character is at risk of bleeding out and must also pass a ```Blackout (Fortitude)``` test (difficulty = 10 + total missing hitpoints) every minute to stay conscious.  Only one such test must be performed each minute.
 
 **SPECIAL:** A torso or head at negative hit points results in death of that character.
 
@@ -158,15 +163,3 @@ Verve is a powerful and useful means of injecting a twist into the game.  It sho
 #### Traits
 
 Players acquire traits that are modifiers on the character that represent physical changes, social obligations, or karmic fluctuations.  Traits can be bought (during character creation or advancement) or earned.  Some traits provide bonuses or alter abilities.  Not all traits are positive though, and they include negative qualities such as missing limbs or other lingering malalignments.  You may select a positive quality at character start.
-
-#### Positive Traits
-
-Extra skill point
-
-Extra ability point
-
-#### Negative Traits
-
-Excessive debt
-
-Wanted

@@ -1,6 +1,5 @@
-@Author: Cornelius Ratfink
-@Note: Gimme yer money!
-
+@Author: Brad Arnett
+@Note: Donate if you like this project:
 # This text is titacular.
 
 ## This is big attention grabbing text.
@@ -16,7 +15,7 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nisl ex. Maecenas turpis leo, facilisis sed enim vel, mollis ultrices nulla. Nullam accumsan arcu ac est egestas, a ullamcorper leo eleifend. Vivamus rhoncus bibendum malesuada. Nunc nunc risus, rutrum ac viverra ut, viverra nec est. Morbi non neque eget tortor rutrum cursus ac at est. Sed ac dapibus eros. Maecenas accumsan vitae sem non venenatis. Etiam accumsan, diam ut euismod dapibus, risus urna blandit leo, quis luctus erat velit ac dui. Vivamus egestas imperdiet aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In at pellentesque nulla. Vivamus a leo gravida, viverra nisi maximus, mollis mauris. Nunc aliquam augue enim, eu maximus eros varius vel. Vestibulum laoreet convallis pellentesque.
 
 Proin rutrum efficitur dolor, non efficitur metus gravida sit amet. Vivamus leo quam, mollis vitae tristique sed, porta id est. Maecenas elit dolor, auctor in volutpat in, mollis sed ipsum. Duis sit amet nunc at nulla interdum porta vel in turpis. Ut interdum sem vitae congue aliquet. Morbi finibus lectus at nisi dictum vulputate. Etiam at libero est. Vestibulum at neque justo. 
-<div style="border: 1px solid grey; float: right; padding:10px; margin:16px" markdown="1">
+<div class="sidebar" markdown="1">
 This is a sidebar containing a table!
 
 |Left column |  A number value |
@@ -37,6 +36,20 @@ Praesent ac pretium turpis. Nulla ullamcorper turpis lacinia turpis placerat, qu
 ###### Fig 1-a. table caption below
 
 Nunc quis odio laoreet, tempus metus at, sodales sem. Ut pharetra magna id urna volutpat, in molestie leo aliquam. Donec orci tortor, dapibus lobortis ex eu, faucibus pharetra erat. Nulla eu libero rhoncus, suscipit felis ac, accumsan magna. Duis felis mi, ornare quis lorem nec, tempus mattis elit. Nam ultrices accumsan tellus vel tempor. Aliquam in vestibulum sapien. Integer id magna ut lacus fermentum sodales. Aliquam erat volutpat. Maecenas bibendum sem sit amet arcu tempus dapibus. Proin dignissim dui ac tellus rhoncus laoreet. In nisi neque, sodales vitae auctor eget, malesuada sit amet nibh. Aenean at dolor sagittis, lacinia quam id, pretium erat. Mauris congue tempor magna et tincidunt.
+
+
+
+Sudden lists!
+
+- this
+- list
+- is
+- unordered
+
+1. BUY
+2. TAKE
+3. BREAK
+4. THROW IT AWAY!
 
 Proin pulvinar congue ultrices. Etiam auctor tempus arcu, in condimentum libero egestas sit amet. Duis eros purus, ultrices in rhoncus quis, varius id nunc. Suspendisse a enim vehicula, congue purus accumsan, egestas lectus. Cras ornare quis quam id malesuada. Cras molestie erat ut felis iaculis, hendrerit finibus ante pellentesque. Fusce suscipit aliquam lorem, a sollicitudin leo fringilla eget.
 

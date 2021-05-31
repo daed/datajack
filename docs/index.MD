@@ -1,5 +1,5 @@
-@Author: Cornelius Ratfink
-@Note: Gimme yer money!
+@Author: Brad Arnett
+@Note: Donate if you like this project:
 
 # Welcome to ${systemName}
 
