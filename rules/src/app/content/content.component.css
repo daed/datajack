@@ -1,0 +1,20 @@
+#content {
+  will-change: contents;
+}
+
+.invis {
+  display: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.tight {
+  margin: 0;
+}
+

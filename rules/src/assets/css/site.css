@@ -1,0 +1,256 @@
+/*
+ * Project Datajack specific CSS
+ *
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;500&family=Kodchasan&family=Share+Tech+Mono&display=swap');
+
+@font-face {
+  font-family: 'saved_by_zero_rg';
+  src: url('../font/saved_by_zero_rg-webfont.woff2') format('woff2'),
+       url('../font/saved_by_zero_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+  border: 0;
+  height: 2px;
+  margin:18px 0;
+  position:relative;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 10%, rgba(255,255,255,0.3) 20%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0.3) 80%, rgba(255,255,255,0) 90%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%,rgba(255,255,255,0)), color-stop(20%,rgba(255,255,255,0.3)), color-stop(50%,rgba(255,255,255,0.65)), color-stop(80%,rgba(255,255,255,0.3)), color-stop(90%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 10%,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0.3) 80%,rgba(255,255,255,0) 90%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255,255,255,0) 10%,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0.3) 80%,rgba(255,255,255,0) 90%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 10%,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0.3) 80%,rgba(255,255,255,0) 90%); /* IE10+ */
+  background: linear-gradient(left, rgba(255,255,255,0) 10%,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.65) 50%,rgba(255,255,255,0.3) 80%,rgba(255,255,255,0) 90%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+hr:before {
+  display: block;
+  border-top: solid 1px #f9f9f9;
+  width: 90%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+
+::selection {
+  background-color: sienna;
+}
+
+::marker {
+  color: hotpink;
+}
+
+/*/////////////////////////////////////////////////////////////////////////*/
+
+
+
+#main-logo {
+  filter: invert(17%) sepia(90%) saturate(5999%) hue-rotate(275deg) brightness(105%) contrast(136%);
+  max-width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+/* TODO: make this responsive */
+.navbar {
+  min-width: 200px;
+  max-width: 23%;
+  margin-left: 14px;
+  padding: 22px 32px 22px 32px;
+  text-align: left;
+  background-color: #050510F9;
+  /* debug */
+  border: 1px solid #b200ff;
+  will-change: contents;
+}
+
+.main {
+  flex-grow: 3;
+  font-family: 'KoHo', sans-serif;
+  text-align: left;
+  margin: 0vh 14px 0px 8px;
+  width: auto;
+  padding: 32px;
+  background-color: #050510F9;
+  /* debug */
+  border: 1px solid #b200ff;;
+  will-change: contents;
+}
+
+#content {
+  will-change: contents;
+}
+
+.invis {
+  display: none;
+}
+
+.background {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height:  100%;
+  mix-blend-mode: difference;
+  /* background-image: url('../img/grey.jpg'); */
+  /*background-image: url('../img/dirty-metal-texture-lores.jpg');*/
+  background-image: url('../img/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: invert(100%); */
+  /* filter: blur(1px); */
+  will-change: transform;
+}
+
+.wrapper {
+  z-index: 1;
+  text-align: center;
+  margin: auto;
+  width: auto;
+  max-width: 1600px;
+  overflow-x: hidden;
+}
+
+.navbar-menu {
+  text-align: left;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.persona-controls-wrapper {
+  position:fixed;
+  right:0;
+  top:20px;
+  padding:8px;
+  z-index: 2;
+  background-color: #39ff14;
+  filter: drop-shadow(10px 5px 2px #222);
+}
+
+.persona-controls {
+  color: #333;
+  width:100%;
+  height:100%;
+}
+
+.persona-status {
+  text-align: left;
+  margin-left: 4px;
+  margin-bottom: 12px;
+}
+
+.persona-buttons {
+  display: flex;
+}
+
+.button1 {
+  padding: 2px 8px 2px 8px;
+  outline: 2px dashed #888;
+  text-transform: uppercase;
+  border: 0;
+  transition: background-color 1.5s, color 1.5s;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.button1:hover {
+  background-color: #444;
+  color: #bbb;
+
+}
+
+.button1-mask {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: rgba(127, 127, 127, 0);
+  margin: 0 6px 0 6px;
+  border-radius: 1px;
+  transition: outline-color 1s ease-out;
+}
+
+.button1-mask:hover {
+  outline-color: rgba(127, 127, 127, 1);;
+}
+
+.footer {
+  margin: 8px 14px 8px 14px;
+  background-color: #050510F9;
+  padding: 12px;
+  border: 1px solid #b200ff;
+  color: #39ff14;
+}
+
+#cc-license-img {
+  filter: invert(17%) sepia(90%) saturate(5999%) hue-rotate(275deg) brightness(105%) contrast(136%);
+}
+
+.license {
+  width: 20%;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.author-stats {
+  margin-top: 28px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.author-line {
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+
+.page-stats {
+  margin-top: 36px;
+  font-family: "Tech Share Mono", monospace;
+}
+
+.page-stat-line {
+  text-align:  right;
+  margin-top: 4px;
+  margin-bottom: 7px;
+  font-size: .7rem;
+}
+
+.stat-offset {
+  padding-right: 6px;
+}
+
+.roller-title {
+  margin-top: 0;
+}
+
+.roller-wrapper {
+  z-index: 2;
+  position:fixed;
+  left:0;
+  bottom:150px;
+  padding:8px;
+  background-color: #39ff14;
+  filter: drop-shadow(10px 5px 2px #222);
+  color: #333;
+  text-align: left;
+}
+
+.tight {
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+.titlebar {
+  margin: 8px 14px 8px 14px;
+  padding: 24px 0;
+  vertical-align: middle;
+  background-color: #050510F9;
+  /* debug */
+  border: 1px solid #b200ff;
+}
+
+#main-logo {
+  filter: invert(17%) sepia(90%) saturate(5999%) hue-rotate(275deg) brightness(105%) contrast(136%);
+  max-width: 100%;
+}

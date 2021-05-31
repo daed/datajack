@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/site.css">
+  <meta name="theme-color" content="#fafafa">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="wrapper">
+    <div class="persona-controls-wrapper">
+      <div class="persona-controls">
+        <div class="persona-status">Error: No persona loaded<span class="blink">_</span></div>
+        <div class="persona-buttons">
+          <button class="button1 left"> Log in</button>
+          <button class="button1 left"> Sign up</button>
+          <button class="button1 left"> herp</button>
+          <button class="button1 left"> derp</button>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="titlebar">
+        <p class="title-text">Datajack!</p>
+
+    </div>
+    <div class='sidebar'>
+      This is the sidebar
+      <ul class='sidebar-menu'>
+        <li>
+          <a href="index.html">Index</a>
+        </li>
+        <li>
+          <a href="style_test.html">Style Test</a>
+        </li>       <li>
+          consectetur adipiscing
+        </li>      <li>
+          Integer fermentum porta orci
+        </li>      <li>
+          Nulla ornare nec nibh non
+        </li>      <li>
+          non justo semper
+        </li>      <li>
+          cursus leo blandit
+        </li>      <li>
+          ac sapien tortor
+        </li>      <li>
+          Vivamus fermentum est a erat porttitor
+        </li>      <li>
+          eu dictum mi semper
+        </li>      <li>
+          Lorem ipsum dolor sit
+        </li>      <li>
+          amet, consectetur adipiscing
+        </li>      <li>
+          Donec tempor pretium finibus
+        </li>      <li>
+          Maecenas at arcu id augue
+        </li>      <li>
+          ac sapien tortor
+        </li>      <li>
+          Curabitur sed tortor
+        </li>      <li>
+          dui scelerisque
+        </li>
+      </ul>
+    </div>
+    <div class='main'>
+      <div id="showdown-test">
+        Seems your browser doesn't support javascript friend.
+      </div>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    // separate section of code for showdown test
+    var sd = document.getElementById("showdown-test");
+    var converter   = new showdown.Converter();
+    converter.setFlavor('github');
+    var text        = "";
+    var html        = converter.makeHtml(text);
+    console.log(html);
+    sd.innerHTML = html;
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://unpkg.com/vue@next"></script>
+
+  <script type="text/javascript">
+    // try <span class="blink">_</span>
+    var blink = document.getElementsByClassName('blink');
+    for(let i=0; i < blink.length; i++) {
+      setInterval(function() {
+        blink[i].style.opacity = (blink[i].style.opacity == 0 ? 1 : 0);
+      }, 1000);
+    }
+  </script>
+
+
+</body>
+
+</html>

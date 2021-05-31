@@ -1,0 +1,48 @@
+.footer {
+  margin: 8px 14px 8px 14px;
+  background-color: #050510F9;
+  padding: 12px;
+  border: 1px solid #b200ff;
+  color: #39ff14;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#cc-license-img {
+  filter: invert(17%) sepia(90%) saturate(5999%) hue-rotate(275deg) brightness(105%) contrast(136%);
+}
+
+
+.license {
+  width: 20%;
+  word-wrap: break-word;
+  text-align: left;
+  justify-content: left;
+}
+
+.author-stats {
+  justify-content: center;
+}
+
+.author-line {
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+
+.page-stats {
+  font-family: "Tech Share Mono", monospace;
+  justify-content: right;
+}
+
+.page-stat-line {
+  text-align:  right;
+  font-size: .7rem;
+}
+
+.stat-offset {
+}

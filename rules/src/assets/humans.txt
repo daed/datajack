@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Brad Arnett -- The Designer -- @ripostemodern
+
+# THANKS
+
+    Brit Oates
+    Ashleen Woods
+    Cody Slauson
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
