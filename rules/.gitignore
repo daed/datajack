@@ -43,3 +43,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# nonfree assets
+*saved_by_zero_rg-webfont.woff*
+*img/**
