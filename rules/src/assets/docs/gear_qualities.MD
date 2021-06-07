@@ -23,7 +23,7 @@ High-maintenance equipment requires a lot of adjustment and tends to be temperam
 
 #### Hip
 
-THIS is the thing to have right now!  It is IN.  It’s been the thing since <celebrity name> started usi-- oh nevermind, she just got a new one.  It’s so yesterday.
+THIS is the thing to have right now!  It is IN.  It’s been the thing since ```<celebrity name>``` started usi-- oh nevermind, she just got a new one.  It’s so yesterday.
 
 Hip items impress people.  They’re expensive, well-designed, and carry a solid look that is timeless.  Completely timeless… until it’s not.  After you have owned this item for a month, it loses the attribute hip.
 

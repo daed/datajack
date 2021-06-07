@@ -25,7 +25,9 @@ export class RulePageGetterService {
     document.location.href = "/404";
   }
 
-  getCachedInstead(assetName : string, cb : Function) {
+  getCachedInstead(params : any, cb : Function) {
+    let assetName   = params.assetName   !== undefined ? params.assetName : "";
+    let allowFail   = params.allowFail   !== undefined ? params.allowFail : false;
     console.log(`assetName ${assetName} provided.  Looking for local file.`);
     let baseUrl = `assets/docs/${assetName}.MD`;
     return fetch(baseUrl)
@@ -35,7 +37,11 @@ export class RulePageGetterService {
         return res.text();
       }
       else {
-        throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
+        if (!allowFail) {
+          this.error404();
+          throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
+        }
+        return "";
       }
     })
     .then(text => {
@@ -51,6 +57,7 @@ export class RulePageGetterService {
     let fallbackUrl = params.fallbackUrl !== undefined ? params.fallbackUrl : "";
     let metadata    = params.meta        !== undefined ? params.meta : false;
     let noCache     = params.noCache     !== undefined ? params.noCache : false;
+    let allowFail   = params.allowFail   !== undefined ? params.allowFail : false;
     // if we got redirected to a 404 page then we bail on this.
     // sending an empty promise to fulfill expectations downstream.
     //
@@ -60,7 +67,7 @@ export class RulePageGetterService {
       return empty;
     }
     if (assetName != "") {
-      return this.getCachedInstead(assetName, cb)
+      return this.getCachedInstead(params, cb)
       .catch((error) => {
         console.log(error);
         // if we catch an error in local cache, let's attempt to pull the GH page.
@@ -71,8 +78,11 @@ export class RulePageGetterService {
             return res.text();
           }
           else {
-            this.error404();
-            throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
+            if (!allowFail) {
+              this.error404();
+              throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
+            }
+            return "";
           }
         })
         .then(text => {
@@ -87,8 +97,11 @@ export class RulePageGetterService {
           return res.text();
         }
         else {
-          this.error404();
-          throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
+          if (!allowFail) {
+            this.error404();
+            throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
+          }
+          return "";
         }
       })
       .then(text => {

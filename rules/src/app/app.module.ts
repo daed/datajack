@@ -9,6 +9,7 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AnnoucementsComponent } from './annoucements/annoucements.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SidebarComponent,
     ContentComponent,
     FooterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AnnoucementsComponent
   ],
   imports: [
     BrowserModule,

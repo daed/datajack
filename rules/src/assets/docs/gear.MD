@@ -94,6 +94,14 @@ This durable and lightweight jacket is designed for security guards who patrol a
 
 When wearing one, the first wound to the chest or either arm hitbox has the damage reduced by one (minimum one).  This reduction may be applied twice before the jacket is too damaged to be of any further use.
 
+<div class="sidebar" markdown="1">
+### What's in a name?
+
+The relentless advertising of the 20th century escalated further in the 21st, with ads becoming invasive to a degree only imagined by yesterday's corporate marketing staff.  The denizens of the Perpetual Age are "hyper-brand aware" and "marketing positive" (or that's what the corp drones keep saying) so branding is included on items here as a convenience.  These are some of the more popular versions of this gear, but when a product shows viability, it's not unusual for a competitor to start making their own version of it.  Even beyond that, entire industries exist just dedicated to producing replicas of a product once it becomes popular enough.  
+
+If you decide that you want something made by a different brand, like a VIP Longcoat made by AEGIS instead of Defiance Tech, it is not any more difficult to find.
+</div>
+
 ##### Defiance Technologies VIP Longcoat
 This stylish overcoat is constructed out of a silk-nylon polymer that stiffens in reaction to kinetic force, making it an ideal choice of coats for executives, politicians, and criminals.
 
@@ -148,7 +156,7 @@ Cyberdecks must be physically connected to a datajack to function.  They must al
 |----|---------|-----|
 |DIY Frankendeck|Cheap, high-maintenance|50,000c|
 |Panasonic Grid Dervish ST-2|High-maintenance|150,000c|
-|Defiance Technologies DataMonitor MK.b|Waterproof, durable, bulletproof|250,000|
+|Defiance Technologies DataMonitor MK.b|Waterproof, durable, bulletproof|250,000c|
 |Phillips GridGuard One|Waterproof, durable, hip|300,000c|
 
 <div class="sidebar" markdown="1">
