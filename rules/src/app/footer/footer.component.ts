@@ -28,6 +28,19 @@ export class FooterComponent implements OnInit {
     });
   }
 
+  updateElementById(text : string, id : string) {
+    if (text) {
+      let sd = document.getElementById(id);
+      if (sd) sd.innerText = text;
+      return true;
+    }
+    else {
+      let sd = document.getElementById(id);
+      if (sd && sd.parentElement) sd.parentElement.innerText = "";
+      return false;
+    }
+  }
+
   renderCreditText(text : any, parseMetadata : boolean, cb? : Function) {
     var meta : any = {};
     var data : any = {};
@@ -36,9 +49,7 @@ export class FooterComponent implements OnInit {
       data = this.rulePageGetter.unpackMetadata(text);
       text = data.text;
     }
-    let sd = document.getElementById("author-name");
-    if (sd) sd.innerText = data.meta.author;
-    sd = document.getElementById("author-note");
-    if (sd) sd.innerText = data.meta.note;
+    this.updateElementById(data.meta.author, "author-name");
+    this.updateElementById(data.meta.note, "author-note");
   }
 }

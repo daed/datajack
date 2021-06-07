@@ -1,14 +1,19 @@
+#### grid://base/rules_
 
-This is the sidebar
-
-- [Index](index)
+- [Introduction](index)
 - [Core Rules](core_rules)
 - [Character Traits](traits)
 - [Combat](combat)
-- [Grid](grid)
-- [Timeline](timeline)
+- [Traits](traits)
+- [Gear](gear)
+- [Gear Qualities](gear_qualities)
 
-Meta
+#### grid://base/world_
+
+- [Timeline](timeline)
+- [Grid](grid)
+
+#### grid://base//meta_
 
 - [Style Test](style_test)
-- [Credits and Attributions](_attribution)
+- [Credits](_attribution)

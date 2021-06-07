@@ -44,6 +44,7 @@ ul {
 
 ul li {
   text-indent: -2ch;
+  line-height: 1.5em;
 }
 
 ul li:before {
@@ -126,5 +127,14 @@ th, td {
   padding:10px;
   margin:16px;
   background-color: rgba(0,0,0,.5);
+  max-width: 300px;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+code {
+  color: rgb(54, 90, 90);
+}

@@ -1,5 +1,11 @@
-<div id="navbar" class='navbar'>
+<div class='navbar'>
+  <div *ngIf="getEnvName() !== ''">
+    {{ environment.name }}
+  </div>
+  <div id="navbar">
 
-  <p>  You shouldn't be reading this.</p>
+    <p>  You shouldn't be reading this.</p>
+
+  </div>
 
 </div>

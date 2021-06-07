@@ -1,0 +1,39 @@
+### Redirect all non-existant pages to index.html
+<IfModule mod_rewrite.c>
+#  RewriteEngine on
+#
+#  # Don't redirect specific file types
+#  RewriteCond %{REQUEST_URI} \.(jpe?g|png|gif|css|js|ico|map|txt)$ [NC,OR]
+#
+#  # Don't redirect my-<view>.html pattern for proper 404 pages
+#  RewriteCond %{REQUEST_URI} my-.+\.html$ [NC,OR]
+#
+#  # Don't redirect any files which exist
+#  RewriteCond %{REQUEST_FILENAME} -s [OR]
+#  RewriteCond %{REQUEST_FILENAME} -l [OR]
+#  RewriteCond %{REQUEST_FILENAME} -d
+#
+#  # If matches any exceptions, don't redirect
+#  RewriteRule ^.*$ - [NC,L]
+#
+#  # If doesn't match any exceptions, redirect to `/index.html`
+#  RewriteRule ^(.*) /index.html [NC,L]
+#
+  RewriteEngine on
+
+  ErrorDocument 404 /404.html
+
+  # Force 404 redirects to return 404 errors.
+  # RewriteRule 404.html - [L,R=404]
+
+  # If an existing asset or directory is requested go to it as it is
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+  RewriteRule ^ - [L]
+  AddDefaultCharset UTF-8
+
+ RewriteRule 404 /404.html [L,R=404]
+ # If the requested resource doesn't exist, use index.html
+ RewriteRule ^(?!assets)(.*)(.[mM][dD]) /index.html [R,L]
+
+</IfModule>

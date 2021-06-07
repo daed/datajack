@@ -1,1 +1,0 @@
-<a href="https://www.freepik.com/photos/background">Brushed metal background photo created by kjpargeter - www.freepik.com</a>

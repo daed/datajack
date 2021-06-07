@@ -21,13 +21,17 @@ export class RulePageGetterService {
     meta : ""
   }
 
+  error404() {
+    document.location.href = "/404";
+  }
+
   getCachedInstead(assetName : string, cb : Function) {
     console.log(`assetName ${assetName} provided.  Looking for local file.`);
     let baseUrl = `assets/docs/${assetName}.MD`;
     return fetch(baseUrl)
     .then(res => {
       if (res.ok) {
-        console.log(`getCachedInstead: retrieved ${baseUrl}, 200`);
+        console.log(`getCachedInstead: retrieved ${baseUrl}`);
         return res.text();
       }
       else {
@@ -47,15 +51,29 @@ export class RulePageGetterService {
     let fallbackUrl = params.fallbackUrl !== undefined ? params.fallbackUrl : "";
     let metadata    = params.meta        !== undefined ? params.meta : false;
     let noCache     = params.noCache     !== undefined ? params.noCache : false;
+    // if we got redirected to a 404 page then we bail on this.
+    // sending an empty promise to fulfill expectations downstream.
+    //
+    if (url.includes("404.html")) {
+      var empty = new Promise<void>((resolve, reject) => {
+      })
+      return empty;
+    }
     if (assetName != "") {
-      this.getCachedInstead(assetName, cb)
+      return this.getCachedInstead(assetName, cb)
       .catch((error) => {
         console.log(error);
         // if we catch an error in local cache, let's attempt to pull the GH page.
         console.log(`fetching ${url}`);
-        fetch(url)
+        return fetch(url)
         .then(res => {
-          return res.text();
+          if (res.ok) {
+            return res.text();
+          }
+          else {
+            this.error404();
+            throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
+          }
         })
         .then(text => {
           cb(text);
@@ -63,9 +81,15 @@ export class RulePageGetterService {
     })}
     else {
       console.log(`fetching ${url}`);
-      fetch(url)
+      return fetch(url)
       .then(res => {
-        return res.text();
+        if (res.ok) {
+          return res.text();
+        }
+        else {
+          this.error404();
+          throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
+        }
       })
       .then(text => {
         cb(text);
