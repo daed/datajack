@@ -16,7 +16,7 @@ export class AnnoucementsComponent implements OnInit {
 
   ngOnInit(): void {
     var params = {
-      url: 'https://raw.githubusercontent.com/daed/datajack/master/docs/_announce.MD',
+      url: this.rulePageGetter.buildGHUrl("", "_announce"),
       assetName: "_announce",
       noCache: true,
       allowFail: true

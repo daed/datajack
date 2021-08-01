@@ -22,7 +22,7 @@ export class ContentComponent implements OnInit {
       return;
     }
     var params = {
-      url: `https://raw.githubusercontent.com/daed/datajack/master/docs/${curRoute}.MD`,
+      url: this.rulePageGetter.buildGHUrl("", `${curRoute}`),
       assetName: curRoute,
       noCache: false,
       metadata: true
@@ -55,4 +55,7 @@ export class ContentComponent implements OnInit {
     return data;
   }
 
+  getSource(): string {
+    return this.rulePageGetter.last.src;
+  }
 }

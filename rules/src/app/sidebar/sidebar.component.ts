@@ -18,10 +18,11 @@ export class SidebarComponent implements OnInit {
   constructor(private router: Router, private rulePageGetter : RulePageGetterService) { }
 
   ngOnInit(): void {
-    var params = {
-      url: 'https://raw.githubusercontent.com/daed/datajack/master/docs/_navbar.MD',
+    var params : any = {
       assetName: "_navbar",
-      noCache: true
+      url: this.rulePageGetter.buildGHUrl("", "_navbar"),
+      noCache: true,
+      allowFail: true
     };
     this.rulePageGetter.getGHPage(params, (data : string) => {
       this.rulePageGetter.renderShowdown(data, this.elementId, false);

@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
       curRoute = "index";
     }
     var params = {
-      url: `https://raw.githubusercontent.com/daed/datajack/master/docs/${curRoute}.MD`,
+      url: this.rulePageGetter.buildGHUrl("", "_navbar"),
       assetName: curRoute,
       noCache: false,
       metadata: true

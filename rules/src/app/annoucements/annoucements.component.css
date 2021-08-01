@@ -4,3 +4,11 @@
   margin: 16px;
   background-color: rgba(0,0,0,.5);
 }
+
+
+.side-text {
+  transform: rotate(90deg);
+  width: fit-content;
+  margin: -20 -28;
+  padding: 0;
+}

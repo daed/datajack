@@ -1,1 +1,49 @@
-index.html
+<!doctype html>
+<html lang="en">
+  <base href="/">
+
+  <app-root></app-root>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+  <script type="text/javascript">
+    console.log("running");
+    // try <span class="blink">_</span>
+    var blink = document.getElementsByClassName('blink');
+    for(let i=0; i < blink.length; i++) {
+      setInterval(function() {
+        blink[i].style.opacity = (blink[i].style.opacity == 0 ? 1 : 0);
+      }, 1000);
+    }
+  </script>
+
+  <script type="text/javascript">
+    console.log("running");
+    function roll2d6() {
+      const die = 6;
+      // +1 because we like die rolls above 0
+      const rand1 = Math.floor(Math.random() * die)+1;
+      const rand2 = Math.floor(Math.random() * die)+1;
+      $("#roller-value").text(`${rand1} + ${rand2} = ${rand1 + rand2}`);
+    }
+  </script>
+
+  <script type="text/javascript">
+    console.log("running");
+    /* stats stuff here */
+    const textEncoder = new TextEncoder();
+    const size = textEncoder.encode($('html').html()).length;
+    $('#page-size').text(size);
+
+    $(document).ready(function() {
+        $("#dom-load").text(Date.now()-timerStart);
+    });
+    $(window).load(function() {
+      $("#page-load").text(Date.now()-timerStart);
+
+      $(".background").removeClass("invis");
+      $(".persona-controls-wrapper").removeClass("invis");
+      $(".roller-wrapper").removeClass("invis");
+    });
+  </script>
+
+</html>

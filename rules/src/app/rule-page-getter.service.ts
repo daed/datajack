@@ -18,8 +18,11 @@ export class RulePageGetterService {
   last = {
     route : "",
     text : "",
-    meta : ""
+    meta : "",
+    src : ""
   }
+
+  repoUrl = "https://raw.githubusercontent.com/daed/lithium-sunset/master/base";
 
   error404() {
     document.location.href = "/404";
@@ -29,19 +32,16 @@ export class RulePageGetterService {
     let assetName   = params.assetName   !== undefined ? params.assetName : "";
     let allowFail   = params.allowFail   !== undefined ? params.allowFail : false;
     console.log(`assetName ${assetName} provided.  Looking for local file.`);
-    let baseUrl = `assets/docs/${assetName}.MD`;
+    let baseUrl = `assets/docs/base/${assetName}.MD`;
     return fetch(baseUrl)
     .then(res => {
       if (res.ok) {
         console.log(`getCachedInstead: retrieved ${baseUrl}`);
+        this.last.src = "local";
         return res.text();
       }
       else {
-        if (!allowFail) {
-          this.error404();
-          throw new Error(`Failed to pull page: ${assetName}.  This should be a 404 error.`);
-        }
-        return "";
+        throw new Error(`Failed to pull page: ${assetName}.  Failing back to github.`);
       }
     })
     .then(text => {
@@ -67,6 +67,7 @@ export class RulePageGetterService {
       return empty;
     }
     if (assetName != "") {
+      console.log("attempting local file get");
       return this.getCachedInstead(params, cb)
       .catch((error) => {
         console.log(error);
@@ -75,6 +76,7 @@ export class RulePageGetterService {
         return fetch(url)
         .then(res => {
           if (res.ok) {
+            this.last.src = "github";
             return res.text();
           }
           else {
@@ -94,6 +96,7 @@ export class RulePageGetterService {
       return fetch(url)
       .then(res => {
         if (res.ok) {
+          this.last.src = "github";
           return res.text();
         }
         else {
@@ -150,12 +153,15 @@ export class RulePageGetterService {
   }
 
 
-  buildGHUrl(fallbackUrl? : string) {
-    let defaultURL = 'https://raw.githubusercontent.com/daed/datajack/master/docs/index.MD';
+  buildGHUrl(fallbackUrl? : string, page? : string) {
+    let defaultURL = `${this.repoUrl}/index.MD`;
     let url;
-    let page = this.getLocationAssetName();
+    if (!page) {
+      page = this.getLocationAssetName();
+    }
+    console.log(page);
     if (page != "") {
-      url = `https://raw.githubusercontent.com/daed/datajack/master/docs/${page}.MD`;
+      url = `${this.repoUrl}/${page}.MD`;
     }
     else {
       url = defaultURL;

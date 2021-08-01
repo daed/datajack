@@ -1,0 +1,6 @@
+[submodule "rules/src/assets/docs/lithium-sunset"]
+	path = rules/src/assets/docs/lithium-sunset
+	url = git@github.com:daed/lithium-sunset.git
+[submodule "rules/src/content/lithium-sunset"]
+	path = rules/src/content/lithium-sunset
+	url = git@github.com:daed/lithium-sunset.git
