@@ -45,7 +45,7 @@ ul {
 }
 
 ul li {
-  text-indent: -2ch;
+  text-indent: -3ch;
   line-height: 1.5em;
 }
 
@@ -161,4 +161,15 @@ code {
 
 ::-webkit-scrollbar-track-piece:end {
   background: transparent url('assets/img/scrollbar.png') repeat-y !important;
+}
+
+.block-wrapper {
+  display: block;
+  margin:4px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
