@@ -1,11 +1,17 @@
 
 <body>
-  <div class="background invis"></div>
-  <div class="wrapper">
+  <div class="background">
+  </div>
+  <div class="wrapper" (onclick)="exitNavbar($event)">
   <app-title>  </app-title>
 
-    <div class="content-wrapper">
-      <div class="sidebar-wrapper">
+    <div class="content-wrapper" (onclick)="exitNavbar($event)">
+      <div class="mobile-menu mobile-only">
+        <div class="sidebar-toggle" id="toggle-sidebar" (click)="toggleNavbar()">
+          <h4 id="toggle-sidebar-label" >Show Sidebar</h4>
+        </div>
+      </div>
+      <div class="sidebar-wrapper toggle-sidebar" id="sidebar-wrapper">
         <app-sidebar></app-sidebar>
       </div>
       <div class='main'>

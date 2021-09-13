@@ -10,6 +10,8 @@
 }
 
 
+
+
 /*
  * A better looking default horizontal rule
  */
@@ -79,7 +81,7 @@ html {
 body {
   font-family: 'KoHo', sans-serif;
   color: #e0e0f0;
-  background-color: #b6b6b4;
+  background-color: #000000;
 }
 
 p {
@@ -137,4 +139,26 @@ th, td {
 
 code {
   color: rgb(54, 90, 90);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b200ff;
+}
+
+
+::-webkit-scrollbar-track-piece:start {
+  background: transparent url('assets/img/scrollbar.png') repeat-y !important;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  background: transparent url('assets/img/scrollbar.png') repeat-y !important;
 }
