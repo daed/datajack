@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="en">
+  <script type="text/javascript">
+    var timerStart = Date.now();
+  </script>
   <base href="/">
 
   <app-root></app-root>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
   <script type="text/javascript">
     console.log("running");
@@ -28,16 +31,12 @@
   </script>
 
   <script type="text/javascript">
-    console.log("running");
-    /* stats stuff here */
-    const textEncoder = new TextEncoder();
-    const size = textEncoder.encode($('html').html()).length;
-    $('#page-size').text(size);
-
-    $(document).ready(function() {
-        $("#dom-load").text(Date.now()-timerStart);
-    });
-    $(window).load(function() {
+    $(window).on('load', function () {
+      console.log("running");
+      /* stats stuff here */
+      const textEncoder = new TextEncoder();
+      const size = textEncoder.encode($('html').html()).length;
+      $('#page-size').text(size);
       $("#page-load").text(Date.now()-timerStart);
 
       $(".background").removeClass("invis");
@@ -45,5 +44,6 @@
       $(".roller-wrapper").removeClass("invis");
     });
   </script>
+
 
 </html>
